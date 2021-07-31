@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+<listener class-name = "com.Demoproject.Utility.Listeners"/>
+</listeners>
+  <test name="Test" >
+ <groups>
+<run>
+<include name="smoke"/>
+</run>
+</groups>
+    <classes>
+      <class name="com.Demoproject.Tests.SearchTest">
+     <methods>
+     <include name ="googlesearchtest_2"/>
+     <include name ="googlesearchtest_1"/>
+     </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
